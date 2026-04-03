@@ -1,5 +1,5 @@
 import Route from "./Route.js";
-import { allRoutes, websiteName } from "./Router/allRoutes.js";
+import { allRoutes, websiteName } from "./allRoutes.js";
 
 // Création d'une route pour la page 404 (page introuvable)
 const route404 = new Route("404", "Page introuvable", "/pages/404.html");
@@ -62,3 +62,5 @@ window.onpopstate = LoadContentPage;
 window.route = routeEvent;
 // Chargement du contenu de la page au chargement initial
 LoadContentPage();
+
+console.log("Route appelée :", actualRoute);
